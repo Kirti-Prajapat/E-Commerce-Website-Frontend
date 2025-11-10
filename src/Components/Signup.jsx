@@ -15,7 +15,7 @@ function Signup() {
     // alert("Signup successful!")
 
     try {
-      const response = await axios.post("http://e-commerce-website-backend-8gvw.onrender.com/getProducts/api/auth/signup",
+      const response = await axios.post("https://e-commerce-website-backend-8gvw.onrender.com/getProducts/api/auth/signup",
         {
           name,
           email,
