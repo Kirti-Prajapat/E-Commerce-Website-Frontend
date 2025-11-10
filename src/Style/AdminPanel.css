@@ -1,0 +1,186 @@
+/* === Overall Layout === */
+.container {
+  max-width: 1250px;
+  margin: 40px auto;
+  user-select: none;
+  padding: 25px 35px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+/* === Header === */
+h2.text-center {
+  font-weight: 600;
+  font-size: 28px;
+  color: #1f2937;
+  margin-bottom: 35px;
+}
+
+/* === Form === */
+form {
+  background: #f9fafb;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Input fields — widened */
+form input,
+form textarea {
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 12px 15px;
+  font-size: 15px;
+  transition: 0.2s ease;
+  margin: 10px;
+  width: 95%; /* full width for all inputs */
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 4px rgba(59, 130, 246, 0.3);
+}
+
+/* === Submit Button === */
+.btn-primary {
+  background-color: #2563eb;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-weight: 500;
+  /* width: 20%; */
+  /* margin: 0 auto; */
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* === Section Title === */
+h4.mb-3 {
+  font-size: 22px;
+  color: #111827;
+  font-weight: 600;
+  border-left: 4px solid #3b82f6;
+  padding-left: 10px;
+  margin-top: 40px;
+}
+
+/* === Table === */
+.table {
+  margin-top: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.table thead {
+  background-color: #1f2937;
+  color: #fff;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  padding: 12px;
+}
+
+/* Product Image */
+.table img {
+  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.table img:hover {
+  transform: scale(1.08);
+}
+
+/* === Buttons === */
+
+/* ✅ Edit Button — Modern Blue-Green */
+#edit-delete-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-warning {
+  background-color: #2563eb; 
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 6px 15px;
+  transition: 0.25s;
+  /* margin: 8px; */
+}
+
+.btn-warning:hover {
+  background-color: #195bea;
+  transform: scale(1.05);
+}
+
+/*  Delete Button — Softer Red */
+.btn-danger {
+  background-color: #de1616;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 6px 12px;
+  /* margin: 8px; */
+  transition: 0.25s;
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+  transform: scale(1.05);
+}
+
+/* 🔄 Add gap between Edit and Delete buttons */
+.btn-warning.me-2 {
+  margin-right: 12px !important;
+}
+
+/* Table Hover */
+.table-hover tbody tr:hover {
+  background-color: #f3f4f6;
+  transition: 0.2s;
+}
+
+/* Empty Table Message */
+td.text-center {
+  font-weight: 500;
+  color: #6b7280;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h2.text-center {
+    font-size: 22px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 13px;
+  }
+}

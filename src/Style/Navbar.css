@@ -1,0 +1,47 @@
+.navbar {
+  background-color: #1e3a8a; /* dark blue */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  font-family: sans-serif;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.navbar a:hover {
+  background-color: #2563eb;
+  color: #f3f4f6;
+}
+.navbar a.cart-link:hover{
+  background-color: transparent;
+  color: inherit;
+}
+
+.cart-btn {
+  background: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3 ease;
+}
+
+.cart-btn:active{
+  transform: scale(0.85);
+}
+
+.cart-btn i {
+  margin-right: 5px;
+}
+
