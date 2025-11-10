@@ -19,7 +19,7 @@ const AdminProductPanel = () => {
 //   ✅ Fetch all products
   const getProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:8900/getProducts");
+      const res = await axios.get("http://e-commerce-website-backend-8gvw.onrender.com/getProducts");
       setProducts(res.data);
     } catch (err) {
       console.error(err);
@@ -40,10 +40,10 @@ const AdminProductPanel = () => {
     e.preventDefault();
     try {
       if (editId) {
-        await axios.put(`http://localhost:8900/updateProduct/${editId}`, form);
+        await axios.put(`http://e-commerce-website-backend-8gvw.onrender.com/updateProduct/${editId}`, form);
         alert("✅ Product Updated");
       } else {
-        await axios.post("http://localhost:8900/addProduct", form);
+        await axios.post("http://e-commerce-website-backend-8gvw.onrender.com/addProduct", form);
         alert("✅ Product Added");
       }
       setForm({
@@ -66,7 +66,7 @@ const AdminProductPanel = () => {
   // ✅ Delete Product
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this product?")) {
-      await axios.delete(`http://localhost:8900/deleteProduct/${id}`);
+      await axios.delete(`http://e-commerce-website-backend-8gvw.onrender.com/deleteProduct/${id}`);
       alert("🗑️ Product Deleted");
       getProducts();
     }
